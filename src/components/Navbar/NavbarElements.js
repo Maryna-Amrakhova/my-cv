@@ -8,7 +8,10 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   padding: 0.2rem calc((100vw - 1000px) / 2);
-  z-index: 12;  
+  z-index: 12; 
+  @media screen and (max-width: 768px) {    
+    width: 100vw;
+  } 
 `;
  
 export const NavLink = styled(Link)`
@@ -21,7 +24,9 @@ export const NavLink = styled(Link)`
   font-size: 18px;
   cursor: pointer;
   &.active {
-    color: #ffffff;    
+    color: #ffffff;} 
+  @media screen and (max-width: 768px) {    
+    width: 100%;      
   }
 `;
  
