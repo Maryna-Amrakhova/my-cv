@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+body {
+  background-image: url("assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:#383838; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-title {  
+  line-height: 160%;
+  margin-top: 140px;
+  margin-left: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2 {    
+  font-size: 42px;
+  font-weight: 500;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.title {
+  margin-left: 40px;
+  margin-top: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  width: 600px;
+  line-height: 160%;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+span {
+  font-size: 24px;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.project-list {
+  list-style: none;
+}
+
+.project-link, .social-links { 
+  text-decoration: none;
+  color:#383838;
+  font-size: 20px;    
+  transition: font-size ease-in-out .1s;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  color: #257242;
+}
+
+img {
+  margin: 20px 20px;
+  padding-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+	height: auto;
+	-webkit-transition: .6s ease-in-out;
+	transition: .6s ease-in-out;
+}
+
+img:hover { 
+  width: 320px;
+}
+
+.time-education, .time-experience {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.place-education, .place-experience, .social {
+  font-size: 24px;
+  color: #257242;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  font-size: 18px;
+  line-height: 160%;
+}
+
+ul li::before {  
+  content: "\2022";
+  color:#257242;
+  font-weight: bold;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+}
+
+.contacts, .work-experience, .education {
+  margin-left: 40px;
+}
+
+.mail-contact {
+  font-size: 24px;
+}
+
+.mail {  
+  color: #257242;
+}
+
+.social-links {
+  padding: 10px;
+}
+
+.social-links:hover {  
+  color: #257242;
+  font-size: 22px;
+}
+
+.social-media {
+  display: grid;
+  width: 100px;  
+}
+
+.detail-skills {
+  display:flex;
+  align-items: flex-end;
 }
