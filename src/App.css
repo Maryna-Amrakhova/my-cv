@@ -8,7 +8,13 @@ body {
 .main-title {  
   line-height: 160%;
   margin-top: 140px;
-  margin-left: 40px;
+  margin-left: 40px;  
+}
+
+@media only screen and (max-width: 768px) {
+.text {
+  width: 100%;
+  }
 }
 
 h2 {    
@@ -69,11 +75,21 @@ img:hover {
   padding: 0px;
   margin: 0px;
 }
+@media only screen and (max-width: 768px) {
+[class*="time-"] {
+  width: 100%;
+  }
+}
 
 .place-education, .place-experience, .social {
   font-size: 24px;
   color: #257242;
   margin-top: 10px;
+}
+@media only screen and (max-width: 768px) {
+[class*="place-"] {
+  width: 100%;
+  }
 }
 
 ul {
@@ -98,6 +114,11 @@ ul li::before {
 .mail-contact {
   font-size: 24px;
 }
+@media only screen and (max-width: 768px) {
+.mail-contact {
+  width: 100%;
+  }
+}
 
 .mail {  
   color: #257242;
@@ -120,4 +141,10 @@ ul li::before {
 .detail-skills {
   display:flex;
   align-items: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+.detail-skills {
+  display: block;
+  }
 }
